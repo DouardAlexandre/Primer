@@ -1,23 +1,33 @@
-$(window).ready(function() {
 
 
-	let hauteur = $(window).height();
+$(document).ready(function() {
+
+
+	
+	var $target = $('body');
+	
+	$('.section').on('inview', function(el){
+		var color = $(el).attr('data-background');
+		$target.css('background-color', color );
+	});
+	/*let hauteur = $(window).height();
 	$('.section')
 	.height(hauteur)
 	.scrollie({
 		//direction : 'both',
 		scrollOffset : -50,
-		scrollRatio : 2,
+		//scrollRatio : 2,
 		scrollingInView : function(elem) {
-			var bgColor = elem.data('background');
-			$('body').css('background-color', bgColor);
+			var Color = $(elem).attr('data-background-color');
+			$('#pagepiling').css('background-color', Color);
 
 		}
-	});
+	});*/
 
 
 
 	$('#pagepiling').pagepiling({
+		//sectionsColor: ['#4FD0E0', '#2ebe21', '#2C3E50', '#51bec4'],
 		direction: 'vertical',
 		verticalCentered: true,
 		scrollingSpeed: 300,
