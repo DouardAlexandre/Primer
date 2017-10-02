@@ -6,26 +6,49 @@
 	<title>Primer</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-	<div class="container">
-		<img src="img/shapes/bg_arch.png" alt="arch" class="bg_arch">
-		<img class="logo" src="img/primer-logo@2x.png" alt="phone">
-		<div class="mobile">
-		    <img class="overlay" src="img/system-overlay.png" alt="phone">
-			<img class="phone" src="img/phone.png" alt="phone">
-			<img class="mobile_screen" src="img/screenshot1.jpg" alt="phone">
+	
+	<div class="mobile">
+		<img class="logo" src="img/logo.png" alt="logo">
+		<img class="overlay" src="img/system-overlay.png" alt="phone">
+		<img class="phone" src="img/phone.png" alt="phone">
+		<img class="mobile_screen" src="img/screenshot1.jpg" alt="phone">
+	</div>
+
+	<div id="pagepiling">
+
+		<div class="section" data-background="#3498db">
+			<div class="container">
+				<img src="img/shapes/bg_arch.png" alt="arch" class="bg_arch">
+				<img class="tasse" src="img/objects/coffee.png" alt="phone">
+				<img class="donut" src="img/objects/donut.png" alt="donut">
+			</div>
 		</div>
+		
+		<div class="section" data-background="#69B982">
+			<div class="container" >
+				<img src="img/shapes/bg_rect.png" alt="arch" class="bg_rect">
+				<img class="sunglasses" src="img/objects/sunglasses.png" alt="sunglasses">
+			</div>
+		</div>
+
+		<div class="section" data-background="black">
+			<div class="container">
+				<img src="" alt="" class="">
+			</div>
+		</div>
+		<div class="section"></div>
 	</div>
 
 
 
 
-
-
 	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+	<script src="js/jquery.scrollie.min.js"></script>
 	<script src="js/primer.js"></script>
 </body>
 </html>

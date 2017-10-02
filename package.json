@@ -1,0 +1,25 @@
+{
+  "name": "primer",
+  "version": "1.0.0",
+  "description": "Primer",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch css -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KVort3x/Primer.git"
+  },
+  "author": "Alexandre Douard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KVort3x/Primer/issues"
+  },
+  "homepage": "https://github.com/KVort3x/Primer#readme"
+}
