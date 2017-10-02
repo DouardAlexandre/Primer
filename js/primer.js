@@ -1,4 +1,22 @@
-$(document).ready(function() {
+$(window).ready(function() {
+
+
+	let hauteur = $(window).height();
+	$('.section')
+	.height(hauteur)
+	.scrollie({
+		//direction : 'both',
+		scrollOffset : -50,
+		scrollRatio : 2,
+		scrollingInView : function(elem) {
+			var bgColor = elem.data('background');
+			$('body').css('background-color', bgColor);
+
+		}
+	});
+
+
+
 	$('#pagepiling').pagepiling({
 		direction: 'vertical',
 		verticalCentered: true,
@@ -19,14 +37,6 @@ $(document).ready(function() {
 
 	//$.fn.pagepiling.setScrollingSpeed(400);
 
-	let hauteur = $(window).height();
-	$('.section').height(hauteur).scrollie({
-		scrollOffset : -50,
-		scrollingInView : function(element) {
-			var bgColor = element.data('background');
-			$('body').css('background-color', bgColor);
-
-		}
-	});
+	
 
 });
