@@ -1,0 +1,41 @@
+body, html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0; }
+
+.container {
+  position: relative;
+  background-color: #4FD0EA;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh; }
+  .container .mobile {
+    position: relative; }
+    .container .mobile .overlay {
+      top: -6.5rem;
+      position: absolute;
+      transform: scale(0.51);
+      margin-left: 11.35rem;
+      z-index: 500; }
+    .container .mobile .phone {
+      position: absolute;
+      top: -15.2rem;
+      transform: scale(0.5);
+      margin-left: 7.3rem; }
+    .container .mobile .mobile_screen {
+      top: -6.5rem;
+      position: absolute;
+      transform: scale(0.51);
+      margin-left: 11.35rem; }
+  .container .logo {
+    position: absolute;
+    transform: scale(0.5); }
+  .container .bg_arch {
+    position: absolute;
+    top: -30rem;
+    left: -52rem;
+    transform: scale(0.5); }
+
+/*# sourceMappingURL=style.css.map */
