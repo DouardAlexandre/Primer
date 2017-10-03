@@ -1,8 +1,15 @@
 
-@include font-face("medium", font-files("../fonts/GT-Walsheim-Pro-Trial-Medium.otf"));
-@include font-face("regular", font-files("../fonts/GT-Walsheim-Pro-Trial-Regular.otf"));
-@import 'fontface';
 
+@font-face {
+	font-family: 'medium';
+	src: url('../fonts/GT-Walsheim-Pro-Trial-Medium.otf') format('otf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'regular';
+	src: url('../fonts/GT-Walsheim-Pro-Trial-Regular.otf') format('otf');
+	font-weight: normal;
+}
 $blueFirstPage : #4FD0EA;
 $greenSecondPage : #69B982;
 $greenThirdPage : #4CB7B8;
@@ -18,11 +25,19 @@ body,html{
 	transition: background 4s ease;
 	//background-color:$blueFirstPage;
 }
-.text{
+h1{
 	font-family:medium;
+	line-height: 42px; 
+}
+.text{
+	font-size: 1.5rem;
+
+	margin-left:40rem;
+	margin-top:4rem;
+	font-family:regular;
 	position:absolute;
 	z-index:50;
-	width:250px;
+	width:270px;
 	color:white;
 }
 img {
@@ -59,15 +74,15 @@ img {
 		margin-left:11.35rem;
 		z-index:13;
 	}
-	.screenshot2{
-		width:464px;
-		height:0;
-		opacity:0;
-		top:-6.5rem;
+	.screen2{
+		//transform: scale(.51);
+		height:1;
+		opacity:1;
+		top:6.5rem;
 		position:absolute;
-		transform: scale(.51);
-		margin-left:11.35rem;
-		z-index:13;
+		width: 232px;
+		margin-left:18.7rem;
+		z-index:113;
 	}
 
 }
@@ -129,9 +144,10 @@ img {
 			-ms-transition: .5s ease-in-out;
 			transition: .5s ease-in-out;
 			position:absolute;
-			top:-75rem;
+			top:0rem;
 			left:-90rem;
 			transform: scale(.5);
+
 		}
 		.bg_cloud{
 			-webkit-transition:.5s ease-in-out;
@@ -141,8 +157,8 @@ img {
 			transition: .5s ease-in-out;
 			opacity:1;
 			position:absolute;
-			top:-75rem;
-			left:-90rem;
+			top:1600rem;
+			left:-75rem;
 			transform: scale(.5);
 		}
 		.bg_square{

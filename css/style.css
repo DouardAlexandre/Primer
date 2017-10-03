@@ -1,61 +1,158 @@
-/*
-Error: Undefined mixin 'font-face'.
-        on line 2 of style.scss, in `font-face'
-        from line 2 of style.scss
+@font-face {
+  font-family: 'medium';
+  src: url("../fonts/GT-Walsheim-Pro-Trial-Medium.otf") format("otf");
+  font-weight: normal; }
 
-1: 
-2: @include font-face("medium", font-files("../fonts/GT-Walsheim-Pro-Trial-Medium.otf"));
-3: @include font-face("regular", font-files("../fonts/GT-Walsheim-Pro-Trial-Regular.otf"));
-4: @import 'fontface';
-5: 
-6: $blueFirstPage : #4FD0EA;
-7: $greenSecondPage : #69B982;
+@font-face {
+  font-family: 'regular';
+  src: url("../fonts/GT-Walsheim-Pro-Trial-Regular.otf") format("otf");
+  font-weight: normal; }
 
-Backtrace:
-style.scss:2:in `font-face'
-style.scss:2
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'font-face'.\A         on line 2 of style.scss, in `font-face'\A         from line 2 of style.scss\A \A 1: \A 2: @include font-face(\"medium\", font-files(\"../fonts/GT-Walsheim-Pro-Trial-Medium.otf\"));\A 3: @include font-face(\"regular\", font-files(\"../fonts/GT-Walsheim-Pro-Trial-Regular.otf\"));\A 4: @import 'fontface';\A 5: \A 6: $blueFirstPage : #4FD0EA;\A 7: $greenSecondPage : #69B982;"; }
+* {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  transition: background 4s ease; }
+
+h1 {
+  font-family: medium;
+  line-height: 42px; }
+
+.text {
+  font-size: 1.5rem;
+  margin-left: 40rem;
+  margin-top: 4rem;
+  font-family: regular;
+  position: absolute;
+  z-index: 50;
+  width: 270px;
+  color: white; }
+
+img {
+  display: block; }
+
+.mobile {
+  display: block; }
+
+.mobile .logo {
+  position: absolute;
+  transform: scale(0.5);
+  z-index: 15;
+  margin-top: 2rem; }
+
+.mobile .overlay {
+  top: -6.5rem;
+  position: absolute;
+  transform: scale(0.51);
+  margin-left: 11.35rem;
+  z-index: 15; }
+
+.mobile .phone {
+  position: absolute;
+  top: -15.2rem;
+  transform: scale(0.5);
+  margin-left: 7.3rem;
+  z-index: 10; }
+
+.mobile .mobile_screen {
+  top: -6.5rem;
+  position: absolute;
+  transform: scale(0.51);
+  margin-left: 11.35rem;
+  z-index: 13; }
+
+.mobile .screen2 {
+  height: 1;
+  opacity: 1;
+  top: 6.5rem;
+  position: absolute;
+  width: 232px;
+  margin-left: 18.7rem;
+  z-index: 113; }
+
+#pagepiling {
+  transition-timing-function: ease-in-out; }
+
+#pagepiling .section {
+  transition: background 1s ease;
+  transition: .5s ease-in-out;
+  background-color: #4FD0EA; }
+
+#pagepiling .section .sunglasses {
+  top: -12rem;
+  display: block;
+  position: absolute;
+  transform: scale(0.5);
+  margin-left: 20rem;
+  margin-right: 16rem; }
+
+#pagepiling .section .napkin {
+  top: -2rem;
+  display: block;
+  position: absolute;
+  transform: scale(0.5);
+  margin-top: 10rem;
+  margin-left: -18rem; }
+
+#pagepiling .section .tasse {
+  top: -12rem;
+  display: block;
+  position: absolute;
+  transform: scale(0.5);
+  margin-left: 36rem;
+  margin-right: 16rem; }
+
+#pagepiling .section .donut {
+  bottom: -12rem;
+  display: block;
+  position: relative;
+  transform: scale(0.5);
+  right: 0rem;
+  margin-left: 40rem; }
+
+#pagepiling .section .bg_arch {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  top: -30rem;
+  left: -52rem;
+  transform: scale(0.5); }
+
+#pagepiling .section .bg_rect {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  top: 0rem;
+  left: -90rem;
+  transform: scale(0.5); }
+
+#pagepiling .section .bg_cloud {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  opacity: 1;
+  position: absolute;
+  top: 1600rem;
+  left: -75rem;
+  transform: scale(0.5); }
+
+#pagepiling .section .bg_square {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  top: -75rem;
+  left: -90rem;
+  transform: scale(0.5); }
