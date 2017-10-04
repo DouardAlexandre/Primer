@@ -2,12 +2,10 @@
   font-family: 'medium';
   src: url("../fonts/GT-Walsheim-Pro-Trial-Medium.otf") format("otf");
   font-weight: normal; }
-
 @font-face {
   font-family: 'regular';
   src: url("../fonts/GT-Walsheim-Pro-Trial-Regular.otf") format("otf");
   font-weight: normal; }
-
 * {
   box-sizing: border-box; }
 
@@ -20,139 +18,182 @@ h1 {
   font-family: medium;
   line-height: 42px; }
 
-.text {
-  font-size: 1.5rem;
-  margin-left: 40rem;
+.linktop {
+  font-size: 1rem;
+  margin-left: 67rem;
   margin-top: 4rem;
+  font-family: medium;
+  font-weight: 900;
+  position: absolute;
+  z-index: 50; }
+  .linktop a {
+    border-radius: .2rem;
+    padding: .5rem;
+    font-family: medium;
+    color: white;
+    outline: none;
+    text-decoration: none; }
+    .linktop a:hover {
+      color: #32A2C9;
+      background: white; }
+
+.linkbottom {
+  font-size: .9rem;
+  margin-left: 50rem;
+  margin-top: 34rem;
+  font-family: medium;
+  font-weight: 900;
+  position: absolute;
+  z-index: 50; }
+  .linkbottom a {
+    padding: .5rem;
+    font-family: regular;
+    color: white;
+    outline: none;
+    text-decoration: none; }
+    .linkbottom a:hover {
+      color: #32A2C9; }
+
+.text {
+  font-size: 1.4rem;
+  margin-left: 38rem;
+  margin-top: 7.5rem;
   font-family: regular;
   position: absolute;
   z-index: 50;
-  width: 270px;
+  width: 380px;
   color: white; }
+  .text p {
+    font-size: 1.15rem; }
+
+.getTheApp {
+  color: white;
+  line-height: 3.5rem;
+  width: 12rem;
+  height: 3.5rem;
+  background-color: #74D9E9;
+  border-radius: .2rem;
+  margin-top: 3rem;
+  font-weight: 900; }
+  .getTheApp p {
+    margin-left: 1rem; }
 
 img {
   display: block; }
 
 .mobile {
   display: block; }
-
-.mobile .logo {
-  position: absolute;
-  transform: scale(0.5);
-  z-index: 15;
-  margin-top: 2rem; }
-
-.mobile .overlay {
-  top: -6.5rem;
-  position: absolute;
-  transform: scale(0.51);
-  margin-left: 11.35rem;
-  z-index: 15; }
-
-.mobile .phone {
-  position: absolute;
-  top: -15.2rem;
-  transform: scale(0.5);
-  margin-left: 7.3rem;
-  z-index: 10; }
-
-.mobile .mobile_screen {
-  top: -6.5rem;
-  position: absolute;
-  transform: scale(0.51);
-  margin-left: 11.35rem;
-  z-index: 13; }
-
-.mobile .screen2 {
-  height: 1;
-  opacity: 1;
-  top: 6.5rem;
-  position: absolute;
-  width: 232px;
-  margin-left: 18.7rem;
-  z-index: 113; }
+  .mobile .logo {
+    position: absolute;
+    transform: scale(0.5);
+    z-index: 15;
+    margin-top: 2rem; }
+  .mobile .overflow {
+    width: 236px;
+    height: 420px;
+    overflow: hidden;
+    top: 6.1rem;
+    position: absolute;
+    margin-left: 18.5rem;
+    z-index: 50; }
+    .mobile .overflow .screen2 {
+      margin-top: 30rem;
+      height: 420px;
+      width: 236px;
+      z-index: 15; }
+  .mobile .overlay {
+    top: -6.5rem;
+    position: absolute;
+    transform: scale(0.51);
+    margin-left: 11.35rem;
+    z-index: 60; }
+  .mobile .phone {
+    position: absolute;
+    top: -15.2rem;
+    transform: scale(0.5);
+    margin-left: 7.3rem;
+    z-index: 10; }
+  .mobile .mobile_screen {
+    top: -6.5rem;
+    position: absolute;
+    transform: scale(0.51);
+    margin-left: 11.35rem;
+    z-index: 13; }
 
 #pagepiling {
   transition-timing-function: ease-in-out; }
+  #pagepiling .section {
+    transition: background 1s ease;
+    transition: .5s ease-in-out;
+    background-color: #4FD0EA; }
+    #pagepiling .section .sunglasses {
+      top: -12rem;
+      display: block;
+      position: absolute;
+      transform: scale(0.5);
+      margin-left: 20rem;
+      margin-right: 16rem; }
+    #pagepiling .section .napkin {
+      top: -2rem;
+      display: block;
+      position: absolute;
+      transform: scale(0.5);
+      margin-top: 10rem;
+      margin-left: -18rem; }
+    #pagepiling .section .tasse {
+      top: -12rem;
+      display: block;
+      position: absolute;
+      transform: scale(0.5);
+      margin-left: 36rem;
+      margin-right: 16rem; }
+    #pagepiling .section .donut {
+      bottom: -12rem;
+      display: block;
+      position: relative;
+      transform: scale(0.5);
+      right: 0rem;
+      margin-left: 40rem; }
+    #pagepiling .section .bg_arch {
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -ms-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      position: absolute;
+      top: -30rem;
+      left: -52rem;
+      transform: scale(0.5); }
+    #pagepiling .section .bg_rect {
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -ms-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      position: absolute;
+      top: 0rem;
+      left: -90rem;
+      transform: scale(0.5); }
+    #pagepiling .section .bg_cloud {
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -ms-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      opacity: 1;
+      position: absolute;
+      top: 1600rem;
+      left: -75rem;
+      transform: scale(0.5); }
+    #pagepiling .section .bg_square {
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      -ms-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      position: absolute;
+      top: -75rem;
+      left: -90rem;
+      transform: scale(0.5); }
 
-#pagepiling .section {
-  transition: background 1s ease;
-  transition: .5s ease-in-out;
-  background-color: #4FD0EA; }
-
-#pagepiling .section .sunglasses {
-  top: -12rem;
-  display: block;
-  position: absolute;
-  transform: scale(0.5);
-  margin-left: 20rem;
-  margin-right: 16rem; }
-
-#pagepiling .section .napkin {
-  top: -2rem;
-  display: block;
-  position: absolute;
-  transform: scale(0.5);
-  margin-top: 10rem;
-  margin-left: -18rem; }
-
-#pagepiling .section .tasse {
-  top: -12rem;
-  display: block;
-  position: absolute;
-  transform: scale(0.5);
-  margin-left: 36rem;
-  margin-right: 16rem; }
-
-#pagepiling .section .donut {
-  bottom: -12rem;
-  display: block;
-  position: relative;
-  transform: scale(0.5);
-  right: 0rem;
-  margin-left: 40rem; }
-
-#pagepiling .section .bg_arch {
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  -ms-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  position: absolute;
-  top: -30rem;
-  left: -52rem;
-  transform: scale(0.5); }
-
-#pagepiling .section .bg_rect {
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  -ms-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  position: absolute;
-  top: 0rem;
-  left: -90rem;
-  transform: scale(0.5); }
-
-#pagepiling .section .bg_cloud {
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  -ms-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  opacity: 1;
-  position: absolute;
-  top: 1600rem;
-  left: -75rem;
-  transform: scale(0.5); }
-
-#pagepiling .section .bg_square {
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  -ms-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  position: absolute;
-  top: -75rem;
-  left: -90rem;
-  transform: scale(0.5); }
+/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@ $(document).ready(function() {
 	let scroll_cloud=0;
 	let scroll_square=0;
 
-	$(".screen2").css("opacity", "0");
+	//$(".screen2").css("opacity", "0");
 
 	//pagepiling
 	$('#pagepiling').pagepiling({
@@ -20,14 +20,17 @@ $(document).ready(function() {
 
 				scroll_rect=1;
 				$(".section").css('background-color', '#4FD0EA');
-				$(".screen2").css("opacity", "0");
-				$(".bg_arch").css('top','-75rem');
+				//$(".screen2").css("opacity", "0");
+				//$(".bg_arch").css('top','-95rem');
 				$(".bg_rect").animate({top: '0rem'}, "slow");
-				$(".screen2").animate({height: '0'}, "slow");
+				//$(".screen2").css({top: '60rem'}, "slow");
 				if(scroll_arch>0){
-					$(".bg_arch").animate({top: '-30rem'}, "200");
+					setTimeout(function(){ 
+						$(".screen2").animate({"margin-top": '30rem'}, "slow");
+
+					}, 700);
+					$(".bg_arch").animate({top: '-30rem'}, "slow");
 					scroll_arch=0;
-					
 				}
 			}
 
@@ -36,9 +39,13 @@ $(document).ready(function() {
             if(index === 2){
             	scroll_arch=1;
             	$(".section").css('background-color', '#69B982');
-            	$(".bg_arch").animate({top: '-75rem'}, "slow");
-            	$(".screen2").css("opacity", "1");
-            	$(".bg_rect").css('opacity','1');
+            	$(".bg_arch").animate({top: '-105rem'}, "slow");
+            	
+            	setTimeout(function(){ 
+            		$(".screen2").animate({"margin-top": '0'}, "slow");
+            	}, 500);
+            	
+            	
             	$(".bg_rect").animate({top: '-65rem'}, "slow");
             	$(".bg_cloud").animate({top: '0rem'}, "slow");
             }
@@ -51,7 +58,7 @@ $(document).ready(function() {
 				$(".napkin").css('opacity','0');
 				$(".section").css('background-color', '#4CB7B8');
 				$(".bg_rect").css("top",'-150rem');
-				$(".bg_rect").css('opacity','0');
+				//$(".bg_rect").css('opacity','0');
 				$(".bg_cloud").animate({top: '-75rem'}, "slow");
 			}
 

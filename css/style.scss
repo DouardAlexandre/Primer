@@ -29,16 +29,79 @@ h1{
 	font-family:medium;
 	line-height: 42px; 
 }
-.text{
-	font-size: 1.5rem;
-
-	margin-left:40rem;
+.linktop{
+	font-size: 1rem;
+	margin-left:67rem;
 	margin-top:4rem;
+	font-family:medium;
+	font-weight:900;
+	position:absolute;
+	z-index:50;
+	
+	a{
+		border-radius:.2rem;
+		padding:.5rem;
+		font-family:medium;
+		//margin-left:1rem;
+		color:white;
+		outline:none;
+		text-decoration:none;
+		&:hover{
+			color:#32A2C9;
+			background:white;
+
+		}
+	}
+}
+.linkbottom{
+	font-size: .9rem;
+	margin-left:50rem;
+	margin-top:34rem;
+	font-family:medium;
+	font-weight:900;
+	position:absolute;
+	z-index:50;
+	
+	a{
+		
+		padding:.5rem;
+		font-family:regular;
+		//margin-left:1rem;
+		color:white;
+		outline:none;
+		text-decoration:none;
+		&:hover{
+			color:#32A2C9;
+			
+
+		}
+	}
+}
+.text{
+	font-size: 1.4rem;
+	margin-left:38rem;
+	margin-top:7.5rem;
 	font-family:regular;
 	position:absolute;
 	z-index:50;
-	width:270px;
+	width:380px;
 	color:white;
+	p{
+		font-size: 1.15rem;
+	}
+}
+.getTheApp{
+	color:white;
+	line-height:3.5rem;
+	width:12rem;
+	height:3.5rem;
+	background-color:#74D9E9;
+	border-radius:.2rem;
+	margin-top:3rem;
+	font-weight:900;
+	p{
+		margin-left:1rem;
+	}
 }
 img {
 	display: block;
@@ -53,12 +116,28 @@ img {
 		z-index:15;
 		margin-top:2rem;
 	}
+	.overflow{
+		width:236px;
+		height: 420px;
+		overflow:hidden;
+		top:6.1rem;
+		position:absolute;
+		//background-color:black;
+		margin-left:18.5rem;
+		z-index:50;
+		.screen2{
+			margin-top:30rem;
+			height:420px;
+			width: 236px;
+			z-index:15;
+		}
+	}
 	.overlay{
 		top:-6.5rem;
 		position:absolute;
 		transform: scale(.51);
 		margin-left:11.35rem;
-		z-index:15;
+		z-index:60;
 	}
 	.phone{
 		position:absolute;
@@ -74,16 +153,7 @@ img {
 		margin-left:11.35rem;
 		z-index:13;
 	}
-	.screen2{
-		//transform: scale(.51);
-		height:1;
-		opacity:1;
-		top:6.5rem;
-		position:absolute;
-		width: 232px;
-		margin-left:18.7rem;
-		z-index:113;
-	}
+
 
 }
 #pagepiling{
