@@ -18,6 +18,9 @@ h1 {
   font-family: medium;
   line-height: 42px; }
 
+.secondTitle, .thirdTitle, .fourthTitle, .secondText, .thirdText, .fourthText {
+  opacity: 0; }
+
 .linktop {
   font-size: 1rem;
   margin-left: 67rem;
@@ -101,6 +104,16 @@ img {
       height: 420px;
       width: 236px;
       z-index: 15; }
+    .mobile .overflow .screen3 {
+      margin-top: 30rem;
+      height: 420px;
+      width: 236px;
+      z-index: 30; }
+    .mobile .overflow .screen4 {
+      margin-top: 30rem;
+      height: 420px;
+      width: 236px;
+      z-index: 35; }
   .mobile .overlay {
     top: -6.5rem;
     position: absolute;
@@ -154,6 +167,13 @@ img {
       transform: scale(0.5);
       right: 0rem;
       margin-left: 40rem; }
+    #pagepiling .section .chopsticks {
+      bottom: -12rem;
+      display: block;
+      position: relative;
+      transform: scale(0.5);
+      right: 0rem;
+      margin-left: 40rem; }
     #pagepiling .section .bg_arch {
       -webkit-transition: .5s ease-in-out;
       -moz-transition: .5s ease-in-out;
@@ -182,7 +202,6 @@ img {
       transition: .5s ease-in-out;
       opacity: 1;
       position: absolute;
-      top: 1600rem;
       left: -75rem;
       transform: scale(0.5); }
     #pagepiling .section .bg_square {
@@ -192,8 +211,7 @@ img {
       -ms-transition: .5s ease-in-out;
       transition: .5s ease-in-out;
       position: absolute;
-      top: -75rem;
-      left: -90rem;
+      left: -30rem;
       transform: scale(0.5); }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,6 +29,9 @@ h1{
 	font-family:medium;
 	line-height: 42px; 
 }
+.secondTitle,.thirdTitle,.fourthTitle,.secondText,.thirdText,.fourthText{
+	opacity:0;
+}
 .linktop{
 	font-size: 1rem;
 	margin-left:67rem;
@@ -131,6 +134,18 @@ img {
 			width: 236px;
 			z-index:15;
 		}
+		.screen3{
+			margin-top:30rem;
+			height:420px;
+			width: 236px;
+			z-index:30;
+		}
+		.screen4{
+			margin-top:30rem;
+			height:420px;
+			width: 236px;
+			z-index:35;
+		}
 	}
 	.overlay{
 		top:-6.5rem;
@@ -196,6 +211,15 @@ img {
 			margin-left:40rem;
 
 		}
+		.chopsticks{
+			bottom:-12rem;
+			display: block;
+			position:relative;
+			transform: scale(.5);
+			right: 0rem;
+			margin-left:40rem;
+
+		}
 		.bg_arch{
 			-webkit-transition:.5s ease-in-out;
 			-moz-transition: .5s ease-in-out;
@@ -227,7 +251,7 @@ img {
 			transition: .5s ease-in-out;
 			opacity:1;
 			position:absolute;
-			top:1600rem;
+			//top:1600rem;
 			left:-75rem;
 			transform: scale(.5);
 		}
@@ -238,8 +262,8 @@ img {
 			-ms-transition: .5s ease-in-out;
 			transition: .5s ease-in-out;
 			position:absolute;
-			top:-75rem;
-			left:-90rem;
+			//top:0rem;
+			left:-30rem;
 			transform: scale(.5);
 		}
 	}
