@@ -19,7 +19,14 @@ h1 {
   line-height: 42px; }
 
 .secondTitle, .thirdTitle, .fourthTitle, .secondText, .thirdText, .fourthText {
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 2.5rem; }
+
+.secondText, .thirdText, .fourthText {
+  margin-bottom: 2.5rem; }
+
+.thirdTitle, .fourthTitle {
+  padding-top: 2.5rem; }
 
 .linktop {
   font-size: 1rem;
@@ -65,9 +72,19 @@ h1 {
   position: absolute;
   z-index: 50;
   width: 380px;
-  color: white; }
+  color: white;
+  margin-bottom: 3rem; }
   .text p {
     font-size: 1.15rem; }
+
+.getTheApp.secondText {
+  background-color: #86C79D; }
+
+.getTheApp.thirdText {
+  background-color: #73C7C4; }
+
+.getTheApp.fourthText {
+  background-color: #B7DC8D; }
 
 .getTheApp {
   color: white;
@@ -76,7 +93,6 @@ h1 {
   height: 3.5rem;
   background-color: #74D9E9;
   border-radius: .2rem;
-  margin-top: 3rem;
   font-weight: 900; }
   .getTheApp p {
     margin-left: 1rem; }
@@ -146,6 +162,19 @@ img {
       transform: scale(0.5);
       margin-left: 20rem;
       margin-right: 16rem; }
+    #pagepiling .section .seaweed {
+      top: -12rem;
+      display: block;
+      position: absolute;
+      transform: scale(0.5);
+      margin-left: 30rem;
+      margin-right: 16rem; }
+    #pagepiling .section .leash {
+      display: block;
+      position: absolute;
+      transform: scale(0.6);
+      margin-top: 0rem;
+      margin-left: -18rem; }
     #pagepiling .section .napkin {
       top: -2rem;
       display: block;
@@ -167,13 +196,31 @@ img {
       transform: scale(0.5);
       right: 0rem;
       margin-left: 40rem; }
-    #pagepiling .section .chopsticks {
-      bottom: -12rem;
+    #pagepiling .section .headphones {
+      bottom: 50rem;
       display: block;
       position: relative;
       transform: scale(0.5);
       right: 0rem;
       margin-left: 40rem; }
+    #pagepiling .section .sushi {
+      bottom: 80rem;
+      display: block;
+      position: relative;
+      transform: scale(0.5);
+      margin-left: 46rem; }
+    #pagepiling .section .newspaper {
+      bottom: 6rem;
+      display: block;
+      position: relative;
+      transform: scale(0.5);
+      margin-left: 30rem; }
+    #pagepiling .section .chopsticks {
+      bottom: -5rem;
+      display: block;
+      position: relative;
+      transform: scale(0.5);
+      left: -33rem; }
     #pagepiling .section .bg_arch {
       -webkit-transition: .5s ease-in-out;
       -moz-transition: .5s ease-in-out;
