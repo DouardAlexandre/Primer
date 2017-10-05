@@ -71,7 +71,7 @@ h1 {
   font-family: regular;
   position: absolute;
   z-index: 50;
-  width: 380px;
+  width: 335px;
   color: white;
   margin-bottom: 3rem; }
   .text p {
@@ -94,8 +94,15 @@ h1 {
   background-color: #74D9E9;
   border-radius: .2rem;
   font-weight: 900; }
-  .getTheApp p {
-    margin-left: 1rem; }
+  .getTheApp span {
+    display: flex; }
+    .getTheApp span i {
+      width: 20px;
+      height: 20px;
+      color: inherit;
+      z-index: 1250; }
+    .getTheApp span p {
+      margin-left: 1rem; }
 
 img {
   display: block; }
@@ -202,7 +209,7 @@ img {
       position: relative;
       transform: scale(0.5);
       right: 0rem;
-      margin-left: 40rem; }
+      margin-left: 35rem; }
     #pagepiling .section .sushi {
       bottom: 80rem;
       display: block;

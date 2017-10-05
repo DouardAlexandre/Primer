@@ -38,8 +38,8 @@ h1{
 	margin-bottom:2.5rem;
 }
 .thirdTitle, .fourthTitle{
-		padding-top:2.5rem;
-	}
+	padding-top:2.5rem;
+}
 .linktop{
 	font-size: 1rem;
 	margin-left:67rem;
@@ -96,7 +96,7 @@ h1{
 	font-family:regular;
 	position:absolute;
 	z-index:50;
-	width:380px;
+	width:335px;
 	color:white;
 	margin-bottom:3rem;
 	p{
@@ -113,6 +113,7 @@ h1{
 .getTheApp.fourthText{
 	background-color:#B7DC8D;
 }
+
 .getTheApp{
 	color:white;
 	line-height:3.5rem;
@@ -120,12 +121,20 @@ h1{
 	height:3.5rem;
 	background-color:#74D9E9;
 	border-radius:.2rem;
-	//margin-top:3rem;
 	font-weight:900;
-	p{
-		margin-left:1rem;
+	span{
+		display:flex;
+		i{
+			width:20px;
+			height:20px;
+		    color:inherit;
+		    z-index: 1250;
+		}
+		p{
+			margin-left:1rem;
+
+		}
 	}
-	
 }
 img {
 	display: block;
@@ -253,7 +262,7 @@ img {
 			position:relative;
 			transform: scale(.5);
 			right: 0rem;
-			margin-left:40rem;
+			margin-left:35rem;
 		}
 		.sushi{
 			bottom:80rem;
