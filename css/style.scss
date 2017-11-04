@@ -122,16 +122,21 @@ h1{
 	background-color:#74D9E9;
 	border-radius:.2rem;
 	font-weight:900;
-
+	.scroll{
+		position:absolute;
+		transform:scale(.3);
+		right:110px;
+		bottom:-11rem;;
+	}
 	span{
 		display:inline-flex;
 		i{
 			width:20px;
 			height:20px;
 			padding-top: 1rem;
-		    color:inherit;
-		    z-index: 1250;
-		    padding-left:1rem;
+			color:inherit;
+			z-index: 1250;
+			padding-left:1rem;
 		}
 		p{
 			margin-left:1rem;

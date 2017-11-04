@@ -93,6 +93,11 @@ h1 {
   background-color: #74D9E9;
   border-radius: .2rem;
   font-weight: 900; }
+  .getTheApp .scroll {
+    position: absolute;
+    transform: scale(0.3);
+    right: 110px;
+    bottom: -11rem; }
   .getTheApp span {
     display: inline-flex; }
     .getTheApp span i {
