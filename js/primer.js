@@ -1,9 +1,23 @@
 
 
 $(window).ready(function() {
+   var lastScroll = 0;
+   $(window).scroll(function(event){
+          //Sets the current scroll position
+          var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+           $.fn.pagepiling.moveSectionDown();
+       }
+       else {
+           $.fn.pagepiling.moveSectionUp();
+       }
+          //Updates scroll position
+          lastScroll = st;
+      });
+   
+   let scroll_arch=0;
 
-	let scroll_arch=0;
-	
 	//pagepiling
 	$('#pagepiling').pagepiling({
 
@@ -19,7 +33,7 @@ $(window).ready(function() {
             	//second paragraph
             	$(".secondTitle").animate({"margin-top": '1.5rem'}, "fast").fadeOut("500");
             	$(".secondText").animate({"margin-top": '1.5rem'}, "fast").fadeOut("500");
-            	 
+
                 $(".napkin").css('opacity','1');
 		        //section color
 		        $(".section").css('background-color', '#4FD0EA');
@@ -115,15 +129,15 @@ $(window).ready(function() {
         },
         direction: 'vertical',
         verticalCentered: true,
-        scrollingSpeed: 100,
+        scrollingSpeed: 500,
         easing: 'swing',
 		//loopBottom: false,
 		//loopTop: false,
 		css3: true,
 		navigation:false,
 		normalScrollElements: null,
-		normalScrollElementTouchThreshold: 5,
-		touchSensitivity: 5,
+		normalScrollElementTouchThreshold: 1,
+		touchSensitivity: 1,
 		keyboardScrolling: true,
 		sectionSelector: '.section',
 		animateAnchor: false

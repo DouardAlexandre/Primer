@@ -12,7 +12,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  transition: background 4s ease; }
+  transition: background s ease; }
 
 h1 {
   font-family: medium;
@@ -88,19 +88,20 @@ h1 {
 
 .getTheApp {
   color: white;
-  line-height: 3.5rem;
   width: 12rem;
   height: 3.5rem;
   background-color: #74D9E9;
   border-radius: .2rem;
   font-weight: 900; }
   .getTheApp span {
-    display: flex; }
+    display: inline-flex; }
     .getTheApp span i {
       width: 20px;
       height: 20px;
+      padding-top: 1rem;
       color: inherit;
-      z-index: 1250; }
+      z-index: 1250;
+      padding-left: 1rem; }
     .getTheApp span p {
       margin-left: 1rem; }
 
