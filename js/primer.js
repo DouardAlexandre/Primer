@@ -1,5 +1,6 @@
 
-
+var $ = require('jquery');
+window.jQuery = $;
 $(window).ready(function() {
    var lastScroll = 0;
    $(window).scroll(function(event){
