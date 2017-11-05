@@ -1,22 +1,9 @@
 
 
 $(window).ready(function() {
-   var lastScroll = 0;
-   $(window).scroll(function(event){
-          //Sets the current scroll position
-          var st = $(this).scrollTop();
-          //Determines up-or-down scrolling
-          if (st > lastScroll){
-           $.fn.pagepiling.moveSectionDown();
-       }
-       else {
-           $.fn.pagepiling.moveSectionUp();
-       }
-          //Updates scroll position
-          lastScroll = st;
-      });
 
    let scroll_arch=0;
+
 
 	//pagepiling
 	$('#pagepiling').pagepiling({
@@ -130,14 +117,14 @@ $(window).ready(function() {
         direction: 'vertical',
         verticalCentered: true,
         scrollingSpeed: 500,
-        easing: 'swing',
+        easing: 'linear',
 		//loopBottom: false,
 		//loopTop: false,
 		css3: true,
 		navigation:false,
 		normalScrollElements: null,
-		normalScrollElementTouchThreshold: 1,
-		touchSensitivity: 1,
+		normalScrollElementTouchThreshold: 5,
+		touchSensitivity: 5,
 		keyboardScrolling: true,
 		sectionSelector: '.section',
 		animateAnchor: false
