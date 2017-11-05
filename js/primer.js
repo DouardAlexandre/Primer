@@ -1,6 +1,5 @@
 
-var $ = require('jquery');
-window.jQuery = $;
+
 $(window).ready(function() {
    var lastScroll = 0;
    $(window).scroll(function(event){
@@ -16,7 +15,7 @@ $(window).ready(function() {
           //Updates scroll position
           lastScroll = st;
       });
-   
+
    let scroll_arch=0;
 
 	//pagepiling
